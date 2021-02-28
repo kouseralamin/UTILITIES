@@ -1,0 +1,59 @@
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width= device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+		<link rel="icon" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAACXBIWXMAAAADAAAAAwFH3DfJAAAAGXRFWHRTb2Z0d2FyZQB3d3cuaW5rc2NhcGUub3Jnm+48GgAAAAtJREFUCNdjYAACAAAFAAHiJgWbAAAAAElFTkSuQmCC">
+		<title>CALCULATOR</title>
+		<style>
+			tr {
+				padding: 0;
+				border: 0;
+				margin: 0;
+				width: 100%;
+			}
+			td {
+				padding: 0;
+				border: 0;
+				margin: 0;
+				width: 20vw;
+				text-align: center;
+				vertical-align: middle;
+				user-select: none;
+				font-size: 25px;
+			}
+		</style>
+	</head>
+	<body style="background-color: black; color: white; padding: 0; border: 0; margin: 0; font-family: monospace;">
+		<center><input type="text" style="background-color: black; color: white; padding: 0; border: 0; margin: 0; outline: none; width: 90vw; height: 20vh; text-align: right; font-size: 25px;"></center>
+		<table style="padding: 0; border: 0; margin: 0; width: 100vw; height: 80vh;">
+			<tbody style="padding: 0; border: 0; margin: 0;">
+				<tr>
+					<td onclick="window.document.getElementsByTagName('input')[0].value += '7'">7</td>
+					<td onclick="window.document.getElementsByTagName('input')[0].value += '8'">8</td>
+					<td onclick="window.document.getElementsByTagName('input')[0].value += '9'">9</td>
+					<td onclick="window.document.getElementsByTagName('input')[0].value = window.document.getElementsByTagName('input')[0].value.substring(0, window.document.getElementsByTagName('input')[0].value.length - 1)">DEL</td>
+					<td onclick="window.document.getElementsByTagName('input')[0].value = ''">AC</td>
+				</tr>
+				<tr>
+					<td onclick="window.document.getElementsByTagName('input')[0].value += '4'">4</td>
+					<td onclick="window.document.getElementsByTagName('input')[0].value += '5'">5</td>
+					<td onclick="window.document.getElementsByTagName('input')[0].value += '6'">6</td>
+					<td onclick="window.document.getElementsByTagName('input')[0].value += '*'">×</td>
+					<td onclick="window.document.getElementsByTagName('input')[0].value += '/'">÷</td>
+				</tr>
+				<tr>
+					<td onclick="window.document.getElementsByTagName('input')[0].value += '1'">1</td>
+					<td onclick="window.document.getElementsByTagName('input')[0].value += '2'">2</td>
+					<td onclick="window.document.getElementsByTagName('input')[0].value += '3'">3</td>
+					<td onclick="window.document.getElementsByTagName('input')[0].value += '+'">+</td>
+					<td onclick="window.document.getElementsByTagName('input')[0].value += '-'">-</td>
+				</tr>
+				<tr>
+					<td colspan="2" onclick="window.document.getElementsByTagName('input')[0].value += '0'">0</td>
+					<td onclick="window.document.getElementsByTagName('input')[0].value += '.'">.</td>
+					<td colspan="2" onclick="window.document.getElementsByTagName('input')[0].value = eval(window.document.getElementsByTagName('input')[0].value)">=</td>
+				</tr>
+			</tbody>
+		</table>
+	</body>
+</html>
