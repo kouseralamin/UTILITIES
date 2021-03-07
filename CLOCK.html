@@ -1,0 +1,13 @@
+<html>
+	<head>
+		<title>CLOCK</title>
+	</head>
+	<script>
+		setInterval(function() {
+			window.document.getElementsByTagName('button')[0].innerText = new Date().toLocaleTimeString('en-GB').replace(/:\s*/g, '');
+		}, 1000)
+	</script>
+	<body style="padding: 0; border: 0; margin: 0;">
+		<center><button style="cursor: none; font-family: monospace; font-size: 25vw; width: 100vw; height: 100vh; background-color: black; color: white; outline: none; padding: 0; border: 0; margin: 0;">000000</button></center>
+	</body>
+</html>
